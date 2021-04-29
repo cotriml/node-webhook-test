@@ -1,8 +1,7 @@
-const { json } = require('express')
 const express = require('express')
 
 const app = express()
-app.use(json())
+app.use(express.json())
 const port = 3002
 
 app.post('/webhook', (req, res) => {
